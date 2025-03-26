@@ -103,6 +103,10 @@ html, body {
     margin-top: 50px;
     margin-left: 3.5%;
 }
+.underline h1{
+    text-decoration: underline;
+    text-underline-offset: 14px;
+}
 
 hr {
     border: none;

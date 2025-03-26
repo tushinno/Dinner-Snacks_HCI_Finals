@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Newsreader';
+    src: local('Newsreader'), url('../font/Newsreader-VariableFont.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url('../font/Inter-VariableFont.ttf') format('truetype');
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    background-color: #fff; 
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header img {
+    width: 60px;
+    height: 50px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+.header a{
+    text-decoration: none;
+}
+.header h2 {
+    font-family: Newsreader, serif;
+    font-size: 24px;
+    color: #333;
+    letter-spacing: 1px;
+    margin-left: 6px;
+}
+.nav {
+    margin-left: auto;
+    margin-right: 5%;
+}
+.nav a {
+    letter-spacing: .5px;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Newsreader, serif;
+    transition: 0.3s ease;
+    background-color: #828282;
+    color: white;
+    border-radius: 5px;
+    margin-right: 15px;
+    position: relative;
+}
+#location{
+    background-color: black;
+}
+.nav a:hover {
+    background-color: #1F2C35;
+}
+.nav a::after {
+    content: "";
+    position: absolute;
+    background-color: #F5F2EB;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav a:hover::after {
+    width: 90%;
+    left: 4%;
+}
+
+.nav a.on {
+    background-color: #F5F2EB;
+    color: #1F2C35;
+
+}
+
+.underline, .underline1 {
+    font-size: 20px;
+    font-family: Newsreader, serif;
+    letter-spacing: 1.5px;
+    padding: 0;
+}
+
+#context, #context1 {
+    margin-top: 50px;
+    margin-left: 3.5%;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #000000;
+    position: relative;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.meal-plan {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px #25343f;
+    font-family: Newsreader, serif;
+}
+.meal-plan h2 {
+    text-align: center;
+    color: #333;
+}
+.meal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.meal img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.meal-info {
+    flex-grow: 1;
+}
+.nutrition {
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}

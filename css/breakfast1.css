@@ -103,6 +103,10 @@ html, body {
     margin-top: 50px;
     margin-left: 3.5%;
 }
+.underline h1{
+    text-decoration: underline;
+    text-underline-offset: 14px;
+}
 
 hr {
     border: none;
@@ -250,9 +254,7 @@ p{
     margin-top: 5px;
     font-weight: bold;
 }
-.Total-cost p{
-    white-space: nowrap;
-}
+
 .text-container, .instructions, .Oyakodon, .Nutri-Value{
     margin-left: 5%;
     margin-top: 3%;
